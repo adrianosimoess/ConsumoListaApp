@@ -24,17 +24,21 @@ namespace ConsumoListaApp
             conteudo.Add("Mito", "Lula");
             conteudo.Add("Oraculo", "Dilma");
 
-            var listaItens = conteudo.Keys.ToList();
             ArrayList lista = new ArrayList();
 
-            for (int i = 0; i < listaItens.Count; i++)
-            {
-                if(listaItens[i] == "Oraculo")
-                {
-                    lista.Add(listaItens[i]);
-                }
-
+            foreach (KeyValuePair<string, string> conteudoDaLista in conteudo){
+                lista.Add(conteudoDaLista.Key);
             }
+
+            //var listaItens = conteudo.Keys.ToList();
+            //for (int i = 0; i < listaItens.Count; i++)
+            //{
+            //   if(listaItens[i] == "Oraculo")
+            //    {
+            //       lista.Add(listaItens[i]);
+            //    }
+
+            // }
 
             listaMunicipio.ItemsSource = lista;
         }
