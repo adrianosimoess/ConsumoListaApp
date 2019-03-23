@@ -10,3 +10,6 @@
 /Users/aluno/Projects/ConsumoListaApp/ConsumoListaApp/obj/Debug/netstandard2.0/XamlC.stamp
 /Users/aluno/Projects/ConsumoListaApp/ConsumoListaApp/obj/Debug/netstandard2.0/ConsumoListaApp.dll
 /Users/aluno/Projects/ConsumoListaApp/ConsumoListaApp/obj/Debug/netstandard2.0/ConsumoListaApp.pdb
+/Users/aluno/Projects/ConsumoListaApp/ConsumoListaApp/bin/Debug/netstandard2.0/Mono.Android.dll
+/Users/aluno/Projects/ConsumoListaApp/ConsumoListaApp/bin/Debug/netstandard2.0/Mono.Android.pdb
+/Users/aluno/Projects/ConsumoListaApp/ConsumoListaApp/obj/Debug/netstandard2.0/ConsumoListaApp.csproj.CopyComplete

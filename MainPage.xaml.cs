@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ConsumoListaApp.Model;
 using Xamarin.Forms;
 
 namespace ConsumoListaApp
@@ -16,31 +17,34 @@ namespace ConsumoListaApp
             InitializeComponent();
         }
 
+
+
         void Handle_Clicked(object sender, System.EventArgs e)
         {
+
             Dictionary<string, string> conteudo = new Dictionary<string, string>();
             conteudo.Add("Professor", "Ramon");
             conteudo.Add("Aluno", "Michel Temer");
             conteudo.Add("Mito", "Lula");
             conteudo.Add("Oraculo", "Dilma");
 
-            ArrayList lista = new ArrayList();
+           // ArrayList lista = new ArrayList();
+
+            List<Mestre> listamestre = new List<Mestre>();
 
             foreach (KeyValuePair<string, string> conteudoDaLista in conteudo){
-                lista.Add(conteudoDaLista.Key);
+
+                Mestre mestre = new Mestre();
+
+                mestre.nome = conteudoDaLista.Value;
+                mestre.tipo = conteudoDaLista.Key;
+
+                listamestre.Add(mestre);
+
             }
 
-            //var listaItens = conteudo.Keys.ToList();
-            //for (int i = 0; i < listaItens.Count; i++)
-            //{
-            //   if(listaItens[i] == "Oraculo")
-            //    {
-            //       lista.Add(listaItens[i]);
-            //    }
 
-            // }
-
-            listaMunicipio.ItemsSource = lista;
+            listaMunicipio.ItemsSource = listamestre;
         }
     }
 }
